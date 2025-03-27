@@ -2,6 +2,7 @@ import { readFileSync } from "fs";
 import matter from "gray-matter";
 import getPostMetadata from "../../../../utils/getPostMetadatas";
 import Markdown from "markdown-to-jsx";
+import Image from "next/image";
 
 function getPostContent(slug: string) {
   const folder = `tournaments/`;
@@ -38,8 +39,17 @@ export default async function TournamentPage(props: {
 }) {
   const slug = (await props.params).slug;
   const post = getPostContent(slug);
+  const leaderImgKey = post.data.leader.split(" ")[0];
+
   return (
     <main>
+      <Image
+        className="m-auto"
+        width={"100"}
+        height={"100"}
+        alt={post.data.leader}
+        src={`https://pweuoelwazf73v8n.public.blob.vercel-storage.com/leaders/${leaderImgKey}_p1.png`}
+      />
       <article>
         <Markdown>{post.content}</Markdown>
       </article>

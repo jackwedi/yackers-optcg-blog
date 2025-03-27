@@ -1,9 +1,9 @@
 ---
 title: Use leader effect against Uta
-date: 03/22/2026
+date: 03/22/2025
 score: 1-3
 players: 12
-leader: OP09 Teach
+leader: OP09-081 Teach
 store: Ludiworld
 ---
 

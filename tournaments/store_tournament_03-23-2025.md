@@ -3,7 +3,7 @@ title: Use leader effect against Uta
 date: 03/23/2025
 score: 1-2
 players: 12
-leader: OP09 Teach
+leader: OP09-081 Teach
 store: OPTCG Official POP UP Store Paris
 ---
 
