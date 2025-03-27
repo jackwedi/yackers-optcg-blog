@@ -1,6 +1,6 @@
 import { readFileSync } from "fs";
 import matter from "gray-matter";
-import getPostMetadata, { IPost } from "../../../../utils/getPostMetadatas";
+import getPostMetadata from "../../../../utils/getPostMetadatas";
 import Markdown from "markdown-to-jsx";
 
 function getPostContent(slug: string) {
@@ -19,16 +19,24 @@ export const generateStaticParams = async () => {
   }));
 };
 
-export function generateMetadata({ params }) {
-  const id = params?.slug ? " . " + params?.slug : "";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
+  const id = slug ? " . " + slug : "";
 
   return {
     title: `Tournament ${id.replaceAll("-", "/").replaceAll("_", " ")}`,
   };
 }
 
-export default function TournamentPage(props: { params: IPost }) {
-  const slug = props.params.slug;
+export default async function TournamentPage(props: {
+  params: Promise<{ slug: string }>;
+}) {
+  const slug = (await props.params).slug;
   const post = getPostContent(slug);
   return (
     <main>
