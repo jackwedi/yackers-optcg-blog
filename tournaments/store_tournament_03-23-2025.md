@@ -11,7 +11,7 @@ store: OPTCG Official POP UP Store Paris
 
 Second time using teach in OP10, my list is still not definitive and the meta is still shifting post ban announcement.
 
-## Round 1 - Green Uta
+## Round 1 - Green Uta 🔴
 
 I lost the dice roll and had to go first.
 
@@ -32,7 +32,7 @@ However, I thought I was safe and took one life, hoping to draw another Teach (T
 
 In the end, I made so many early misplays that it was too hard to recover.
 
-## Round 2 - Green Uta (AGAIN)
+## Round 2 - Green Uta 🟢
 
 Won the dice and choose to go second.
 Tried to apply the same gamplan: Liberation (TODO).
@@ -46,7 +46,7 @@ His hand was full of brick he had only 1K.
 
 Usually I tend to play it safe and wait that I get a 100% lethal, but this time I understood correctly that I wouldnt be able to survive next turn so I had to go for it.
 
-## Round 3 - Red Shanks
+## Round 3 - Red Shanks 🔴
 
 Won the dice and choose to go second.
 
@@ -62,7 +62,3 @@ This time it did not work at all but the player told me that his decklist was de
 
 From these games I found that Doc Q was not as efficient as it was in OP09, I need to test a decklist without him to check.
 From the recent decklists it seems that some players are dropping Doc Q and/or Laffite but it seems crazy.
-
-# Decklist
-
-TODO

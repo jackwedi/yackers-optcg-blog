@@ -24,11 +24,10 @@ export default function PostCard(props: { post: IPost }) {
         <p className="text-neutral-600 dark:text-neutral-400 w-[150px] tabular-nums">
           {formatDate(post.date)}
         </p>
-        <p className="text-neutral-900 flex dark:text-neutral-100 tracking-tight">
-          [{post.leader}]{" "}
-        </p>
-        <p className="text-green-700">{wins} WIN </p>
-        <p className="text-red-700"> {loss} LOSS</p>
+        <p className={wins > loss ? "text-green-700" : "text-red-700"}>
+          [{props.post.score}]{" "}
+        </p>{" "}
+        <p>{post.store} </p>
       </div>
     </Link>
   );

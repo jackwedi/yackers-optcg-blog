@@ -8,6 +8,7 @@ export interface IPost {
   bio: string;
   leader: string;
   slug: string;
+  store: string;
 }
 export default function getPostMetadata(basePath: string) {
   const folder = basePath + "/";
@@ -27,6 +28,7 @@ export default function getPostMetadata(basePath: string) {
       players: datas.players,
       bio: datas.bio,
       leader: datas.leader,
+      store: datas.store,
       slug: filename.replace(".md", ""),
     };
   });
