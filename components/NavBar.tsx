@@ -4,6 +4,9 @@ const navItems = {
   "/": {
     name: "Yacker's OPTCG",
   },
+  "/decklist": {
+    name: "Decklists",
+  },
 };
 
 export function Navbar() {
