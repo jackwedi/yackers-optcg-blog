@@ -11,9 +11,14 @@ export default function Home() {
       </h1>
       <p className="mb-4">{`I'm Jack and I started playing OPTCG during the launch of OP06 and since then I still can't understand why I can't be consistent with my local tournament results. This blog will detail every tournament I will attend and hopefully I can get some kind of improvment by taking notes of every matchups.`}</p>
       <div className="my-8">
-        {postMetadatas.map((post, postIndex) => {
-          return <PostCard key={postIndex} post={post}></PostCard>;
-        })}
+        {postMetadatas
+          .sort(
+            (postA, postB) =>
+              new Date(postB.date).getDate() - new Date(postA.date).getDate()
+          )
+          .map((post, postIndex) => {
+            return <PostCard key={postIndex} post={post}></PostCard>;
+          })}
       </div>
     </section>
   );
