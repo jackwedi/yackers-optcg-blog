@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync } from "fs";
 import matter from "gray-matter";
 export interface IPost {
-  title: string;
+  meta: string;
   date: string;
   score: string;
   players: number;
@@ -22,7 +22,7 @@ export default function getPostMetadata(basePath: string) {
     const datas = matterResult.data;
 
     return {
-      title: datas.title,
+      meta: datas.meta,
       date: datas.date,
       score: datas.score,
       players: datas.players,

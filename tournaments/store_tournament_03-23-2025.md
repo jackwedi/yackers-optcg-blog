@@ -1,5 +1,5 @@
 ---
-title: Use leader effect against Uta
+meta: OP10
 date: 03/23/2025
 score: 1-2
 players: 12
@@ -7,7 +7,7 @@ leader: OP09-081 Teach
 store: OPTCG Official POP UP Store Paris
 ---
 
-# [OP10] 3 ROUNDS 23 03 2025
+# Uta : use leader abilty earlier
 
 Second time using teach in OP10, my list is still not definitive and the meta is still shifting post ban announcement.
 

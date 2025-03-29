@@ -1,5 +1,5 @@
 ---
-title: Use leader effect against Uta
+meta: OP10
 date: 03/22/2025
 score: 1-3
 players: 12
@@ -7,7 +7,7 @@ leader: OP09-081 Teach
 store: Ludiworld
 ---
 
-# 4 ROUNDS 23-03-2025
+# Play it safe against yellow
 
 First time using teach in OP10.
 
@@ -43,4 +43,4 @@ I don't know how to handle that matchup, my gameplan was to have big Burgess for
 
 # Thoughts
 
-Major throwing made in Round 2, I still don't understand why I chose to attack life when ahead against a yellow deck.
+Major throwing made in Round 2, I still don't understand why I chose to attack life when ahead against a yellow deck. I must play it safer against yellow decks.
