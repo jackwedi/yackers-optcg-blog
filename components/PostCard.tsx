@@ -8,10 +8,15 @@ export default function PostCard(props: { post: IPost }) {
 
   const [wins, loss] = props.post.score.split("-");
   const leaderImgKey = props.post.leader.split(" ")[0];
-
+  const scoreColor =
+    loss === "0"
+      ? "text-green-700"
+      : wins > loss
+      ? "text-amber-700"
+      : "text-red-700";
   return (
     <Link
-      className="flex flex-col space-y-1 mb-4 "
+      className="flex flex-col space-y-1 mb-4"
       href={`/tournament/${post.slug}`}
     >
       <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2 hover:opacity-80">
@@ -24,10 +29,7 @@ export default function PostCard(props: { post: IPost }) {
         <p className="text-neutral-600 dark:text-neutral-400 w-[150px] tabular-nums">
           {formatDate(post.date)}
         </p>
-        <p className={wins > loss ? "text-green-700" : "text-red-700"}>
-          [{props.post.score}]{" "}
-        </p>{" "}
-        <p>{post.store} </p>
+        <p className={scoreColor}>[{props.post.score}] </p> <p>{post.store} </p>
       </div>
     </Link>
   );
