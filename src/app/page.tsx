@@ -14,7 +14,7 @@ export default function Home() {
         {postMetadatas
           .sort(
             (postA, postB) =>
-              new Date(postB.date).getDate() - new Date(postA.date).getDate()
+              new Date(postB.date) - new Date(postA.date)
           )
           .map((post, postIndex) => {
             return <PostCard key={postIndex} post={post}></PostCard>;
