@@ -1,10 +1,10 @@
 ---
-**meta:** OP10  
-**date:** 04/13/2025  
-**score:** 3-2  
-**players:** 19  
-**leader:** OP09-081 Teach  
-**store:** UltraJeux Bastille  
+meta: OP10  
+date: 04/13/2025  
+score: 3-2  
+players: 19  
+leader: OP09-081 Teach  
+store: UltraJeux Bastille  
 ---
 
 # Pluffy is Getting Trickier
